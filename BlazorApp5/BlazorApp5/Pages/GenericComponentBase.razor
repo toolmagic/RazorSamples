@@ -1,0 +1,10 @@
+﻿@typeparam TData
+@inherits ComponentBase
+
+<h3>GenericComponentBase[@typeof(TData).ToString()]</h3>
+
+@code {
+
+    [Parameter]
+    public TData? Value { get; set; }
+}
